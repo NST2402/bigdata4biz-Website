@@ -1,0 +1,54 @@
+LEGAL PAGES (Impressum / Datenschutz) ── */
+.page-section { display: none; }
+.page-section.active { display: block; }
+.legal-nav {
+  position: sticky; top: 0; z-index: 200;
+  padding: 0 3.5rem; height: 62px;
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(18,18,18,.97); backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(161,21,21,.1);
+}
+.nav-back {
+  font-family: 'Inter', sans-serif; font-size: .78rem; font-weight: 700;
+  letter-spacing: .06em; text-transform: uppercase;
+  color: var(--gray); text-decoration: none; cursor: pointer; transition: color .2s;
+  background: none; border: none;
+}
+.nav-back:hover { color: var(--green); }
+.legal-wrap { max-width: 760px; margin: 0 auto; padding: 5rem 2rem 6rem; position: relative; z-index: 1; }
+.legal-wrap h1 {
+  font-family: 'Inter', sans-serif; font-weight: 800;
+  font-size: clamp(1.9rem,4vw,2.6rem); line-height: 1.15; margin-bottom: 2.2rem;
+}
+.legal-wrap h2 {
+  font-family: 'Inter', sans-serif; font-weight: 800;
+  font-size: 1.3rem; margin: 3rem 0 .6rem; color: var(--white);
+  padding-top: 1.6rem; border-top: 1px solid var(--border);
+}
+.legal-wrap h2:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+.legal-wrap h3 {
+  font-family: 'Inter', sans-serif; font-weight: 700;
+  font-size: 1rem; margin: 1.6rem 0 .6rem; color: var(--green);
+}
+.legal-wrap h4 {
+  font-family: 'Inter', sans-serif; font-weight: 700;
+  font-size: .92rem; margin: 1.3rem 0 .5rem; color: var(--gray);
+  text-transform: uppercase; letter-spacing: .04em;
+}
+.legal-wrap p { font-size: .92rem; color: var(--white); margin-bottom: 1rem; line-height: 1.75; }
+.legal-wrap .platform-block {
+  background: var(--bg3); border: 1px solid var(--border); border-left: 3px solid var(--green);
+  padding: 1.6rem 2rem; margin-bottom: 2.6rem;
+}
+.legal-wrap .platform-block p { font-size: .95rem; margin-bottom: .3rem; }
+.legal-wrap .platform-block .co-name { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 1.15rem; margin-bottom: .5rem; }
+.legal-wrap .addr-block p { margin-bottom: .3rem; }
+.legal-wrap a { color: var(--green); text-decoration: none; word-break: break-word; }
+.legal-wrap a:hover { text-decoration: underline; }
+.legal-badge {
+  display: inline-block; font-family: 'Inter', sans-serif;
+  font-size: .68rem; font-weight: 700; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--green); border: 1px solid var(--green-dim); background: var(--green-glow);
+  padding: .4rem 1.4rem; margin-bottom: 1.6rem;
+  clip-path: polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%);
+}

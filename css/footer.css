@@ -1,0 +1,8 @@
+/* ── FOOTER ── */
+footer { background:var(--bg); border-top:1px solid var(--border); padding:2.5rem 3rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:.4rem 1rem; }
+.footer-brand { font-family:'Inter', sans-serif; font-weight:800; font-size:1rem; color:var(--green); display:flex; align-items:center; gap:.9rem; }
+.footer-brand span { color:var(--white); }
+.footer-logo-img { height:26px; width:auto; display:block; }
+footer p { font-size:.8rem; color:var(--gray); }
+.footer-legal a { color:var(--gray); text-decoration:none; }
+.footer-legal a:hover { color:var(--green); text-decoration:underline; }

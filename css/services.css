@@ -1,0 +1,33 @@
+/* ── PRINCIPLES ── */
+.principles-bg { background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%); padding:5rem 3rem; }
+.principles-in { max-width:1200px; margin:0 auto; }
+.principles-in h2 { font-family:'Inter', sans-serif; font-weight:800; font-size:clamp(1.5rem,2.5vw,2rem); margin-bottom:.6rem; }
+.principles-in > p { color:var(--gray); font-size:.92rem; line-height:1.65; max-width:600px; margin-bottom:3rem; }
+.pgrid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:1.4rem; }
+.p-card {
+  border:1px solid var(--border); border-top:2px solid var(--green);
+  background:var(--bg3); padding:1.8rem 1.6rem;
+  opacity:0; transform:translateY(20px); transition:opacity .6s ease,transform .6s ease;
+}
+.p-card.visible { opacity:1; transform:translateY(0); }
+.p-card .icon { font-size:1.6rem; margin-bottom:1rem; display:block; }
+.p-card h4 { font-family:'Inter', sans-serif; font-weight:700; font-size:.95rem; margin-bottom:.65rem; }
+.p-card p { font-size:.83rem; color:var(--gray); line-height:1.65; }
+
+/* ── FLYWHEEL ── */
+.learning-bg { background:var(--bg); padding:5rem 3rem; border-top:1px solid var(--border); }
+.learning-in { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start; }
+.learning-text h2 { font-family:'Inter', sans-serif; font-weight:800; font-size:clamp(1.6rem,2.8vw,2.2rem); line-height:1.2; margin-bottom:1rem; }
+.learning-text h2 em { font-style:normal; color:var(--green); }
+.learning-text p { color:var(--gray); font-size:.92rem; line-height:1.7; margin-bottom:1.5rem; }
+.flywheel { display:flex; flex-direction:column; gap:.8rem; }
+.fw-step {
+  display:flex; gap:1rem; align-items:flex-start; padding:.9rem 1.2rem;
+  border:1px solid var(--border); background:var(--bg3);
+  opacity:0; transform:translateX(20px); transition:opacity .6s ease,transform .6s ease;
+}
+.fw-step.visible { opacity:1; transform:translateX(0); }
+.fw-n { font-family:'Inter', sans-serif; font-weight:800; font-size:.8rem; color:var(--green); width:24px; flex-shrink:0; margin-top:.1rem; }
+.fw-t { font-size:.86rem; color:var(--gray); line-height:1.55; }
+.fw-t strong { color:var(--white); font-weight:500; }
+.fw-after { margin-top:1.5rem; padding:1rem 1.4rem; background:var(--green-glow); border:1px solid rgba(161,21,21,.2); font-size:.85rem; color:rgba(161,21,21,.9); line-height:1.55; }

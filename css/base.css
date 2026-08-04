@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+:root {
+  --bg:         #121212;
+  --bg2:        #191919;
+  --bg3:        #1D1D1D;
+  --red-lt:     #7F7F7F;
+  --green:      #A11515;
+  --green-dim:  #7A1010;
+  --green-glow: rgba(161,21,21,.12);
+  --white:      #F2F2F2;
+  --gray:       #7F7F7F;
+  --gray-dim:   #3A3A3A;
+  --amber:      #A66A6A;
+  --border:     #2E2E2E;
+  --border-red: rgba(127,127,127,.25);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  background: var(--bg); color: var(--white);
+  font-family: 'DM Sans', sans-serif; font-weight: 300;
+  overflow-x: hidden; line-height: 1.6;
+}
+body::before {
+  content: ''; position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  pointer-events: none; z-index: 0; opacity: .6;
+}
+
+/* ── LANG ── */
+.lang-de .de { display: block; }
+.lang-de .en { display: none; }
+.lang-en .de { display: none; }
+.lang-en .en { display: block; }
+.lang-de .de-i { display: inline; }
+.lang-de .en-i { display: none; }
+.lang-en .de-i { display: none; }
+.lang-en .en-i { display: inline; }
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  nav{padding:0 1.5rem}
+  .nav-links{display:none}
+  .hero-stats{gap:1.8rem}
+  .psgrid,.addons-grid,.pgrid,.learning-in{grid-template-columns:1fr}
+  .pgrid4{grid-template-columns:1fr 1fr}
+  .sw,.pstrip,.addons-bg,.principles-bg,.learning-bg,.compare-bg,.cta-bg{padding:3.5rem 1.5rem}
+  footer{flex-direction:column;text-align:center}
+}
+@media(max-width:600px){
+  .pgrid4{grid-template-columns:1fr}
+  .hero h1{font-size:2.2rem}
+  .legal-wrap{padding:3.5rem 1.25rem 4rem !important}
+  .legal-nav{padding:0 1.25rem !important}
+}
+/* ──

@@ -1,0 +1,9 @@
+/* ── CTA ── */
+.cta-bg { background:linear-gradient(135deg,#1D1D1D 0%,var(--bg) 100%); border-top:1px solid rgba(161,21,21,.2); padding:6rem 3rem; text-align:center; }
+.cta-in { max-width:700px; margin:0 auto; }
+.cta-in h2 { font-family:'Inter', sans-serif; font-weight:800; font-size:clamp(1.8rem,3.5vw,3rem); line-height:1.15; margin-bottom:1.2rem; }
+.cta-in h2 em { font-style:normal; color:var(--green); }
+.cta-in p { color:var(--gray); font-size:.95rem; line-height:1.7; margin-bottom:2.5rem; }
+.cta-contact { margin-top:2rem; font-size:.82rem; color:var(--gray); line-height:1.9; }
+.cta-contact a { color:var(--green); text-decoration:none; }
+.cta-contact a:hover { text-decoration:underline; }

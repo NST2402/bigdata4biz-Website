@@ -1,0 +1,17 @@
+/* ── COMPARE ── */
+.compare-bg { background:var(--bg2); border-top:1px solid var(--border); padding:5rem 3rem; }
+.compare-in { max-width:1000px; margin:0 auto; }
+.compare-in h2 { font-family:'Inter', sans-serif; font-weight:800; font-size:clamp(1.4rem,2.5vw,1.9rem); margin-bottom:.5rem; }
+.compare-in > p { color:var(--gray); font-size:.9rem; margin-bottom:3rem; }
+table.ctab { width:100%; border-collapse:collapse; font-size:.87rem; }
+table.ctab th {
+  font-family:'Inter', sans-serif; font-size:.72rem; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase;
+  padding:.8rem 1.2rem; text-align:left; border-bottom:2px solid var(--border); color:var(--gray);
+}
+table.ctab th.tg { color:var(--green); border-bottom-color:var(--green); }
+table.ctab td { padding:.9rem 1.2rem; border-bottom:1px solid var(--border); vertical-align:top; color:var(--gray); }
+table.ctab td:first-child { color:var(--white); font-weight:400; }
+table.ctab td.bad { color:rgba(127,127,127,.8); }
+table.ctab td.good { color:rgba(161,21,21,.9); }
+table.ctab tr:hover td { background:rgba(161,21,21,.02); }
